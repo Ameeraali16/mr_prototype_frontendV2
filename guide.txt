@@ -1,0 +1,20 @@
+
+
+Run application: npm run dev
+
+Project created using: React + tailwind + vite
+
+il8n for translation/lang switching but this is not dynamic its hardcoded (a better alternative could be to upload
+translations along with questions in backend and then fetch them in frontend assign lables and apply transitions with il8n)
+
+
+InterviewPage.jsx:
+
+function waitForUserGesture() -> Apparently mobile browsers block audio autoplay and require some user interaction first
+before audio can play. the user interaction is recorded and its state is saved when you press start iterview button but if u directly start with interview page the first question might ot play audio because the interaction state is false.
+
+Things that might need fixing:
+
+if collab runtime disconnects then frontend keeps playing and saving audio until unless you tweak (do changes in code) or refresh
+
+when caption becomes too long screen becomes scrollable but the background doesnt extend with it UI issues
